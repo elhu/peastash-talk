@@ -1,0 +1,11 @@
+<div class="blog">
+  <h2><%= blog.title %></h2>
+
+  <p>
+    <%= blog.content %>
+  </p>
+
+  <div class="blog-footer">
+    <strong>Author:</strong> <%= blog.author %> | <strong><%= blog.created_at.to_formatted_s(:short) %></strong>
+  </div>
+</div>

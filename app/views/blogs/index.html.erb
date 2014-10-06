@@ -1,0 +1,11 @@
+<h1>Listing blogs</h1>
+
+  <div class="blogs">
+    <% @blogs.each do |blog| %>
+      <%= render partial: 'blog', object: blog %>
+    <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New Blog', new_blog_path %>
